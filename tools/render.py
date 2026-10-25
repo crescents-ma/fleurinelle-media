@@ -24,6 +24,6 @@ with sync_playwright() as pw:
         pg.goto("file://" + hp)
         pg.wait_for_timeout(500)
         for i, s in enumerate(pg.query_selector_all("section"), 1):
-            s.screenshot(path=f"{folder}/{i:02d}.png")
+            s.screenshot(path=f"{folder}/{i:02d}.jpg", type="jpeg", quality=92)
         print(n, d, len(p["slides"]), "slides")
     b.close()

@@ -627,3 +627,37 @@ Follow us so you never miss a birthday back home.""",
 }
 for _n, _c in CAPTIONS.items():
     POSTS[_n - 1]["caption"] = _c
+
+
+# ---- Ocoya accepts at most 6 images per post reliably: tighten carousels to 6.
+def _six(n, slides):
+    POSTS[n - 1]["slides"] = slides
+    assert len(slides) <= 6, n
+
+_p = lambda n: POSTS[n - 1]["slides"]
+# 3: merge steps 2+3 and 4+5
+_s = _p(3)
+_six(3, [_s[0], _s[1],
+         dict(photo="sofia", eyebrow="Étapes 2 et 3", head="Un bouquet. Votre carte.", line="En arabe, français, anglais ou espagnol. Vos mots, pas les nôtres."),
+         dict(eyebrow="Étapes 4 et 5", head="Le jour, le créneau, l'adresse.", line="Prix total en €, livraison incluse. Puis quartier, immeuble, étage et téléphone."),
+         _s[6], _s[7]])
+# 7: drop red-with-white, keep recap
+_s = _p(7)
+_six(7, [_s[0], _s[1], _s[2], _s[3], _s[5],
+         dict(head="Save this for next time.", list=["Red: love", "Pink: thank you", "Coral: you make me happy", "Mixed: pure joy"])])
+# 9: merge 1 and 2
+_s = _p(9)
+_six(9, [_s[0],
+         dict(eyebrow="1", head="The full price, upfront.", line="In €, delivery included, before you pay. No account needed."),
+         dict(eyebrow="2", head="Your card, her language.", line="Arabic, French, English or Spanish."),
+         dict(eyebrow="3", head="Your day, your time window.", line="You choose when it arrives."),
+         dict(_s[5], eyebrow="4"), _s[6]])
+# 10, 15, 17, 22, 28: drop the closing slide (the caption carries the ask)
+for _n in (10, 15, 17, 22, 28):
+    _six(_n, _p(_n)[:6])
+# 12: drop the recap
+_six(12, _p(12)[:6])
+# 26: cover + five occasions
+_s = _p(26)
+_six(26, _s[:6])
+POSTS[25]["caption"] = POSTS[25]["caption"].replace(" Juste comme ça : A Pop of Color.", "")
