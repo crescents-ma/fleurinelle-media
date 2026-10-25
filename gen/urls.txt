@@ -1,1 +1,13 @@
 test-riad https://cdn.ocoya.com/prod/ai/posts/3319708c-ffb0-49e5-8758-e2e68d5f8a21.png
+paris-window https://cdn.ocoya.com/prod/ai/posts/fe63454d-6938-4d1d-a354-0010253003c8.png
+fes-door https://cdn.ocoya.com/prod/ai/posts/1ae1ab7f-e3bd-4f36-b733-7f7d39c22fba.png
+salon-tea https://cdn.ocoya.com/prod/ai/posts/44cf191f-29a7-458c-9173-cf82d28075f1.png
+grandmother https://cdn.ocoya.com/prod/ai/posts/e7087900-e330-49a8-b50c-0b093201d712.png
+father https://cdn.ocoya.com/prod/ai/posts/c1826904-675d-44ae-a001-7707e95c93b2.png
+new-baby https://cdn.ocoya.com/prod/ai/posts/c56722b5-e10e-4d1c-bac7-11b57d334a8d.png
+office https://cdn.ocoya.com/prod/ai/posts/f9cdf8f1-03fd-4292-b4d5-1321ec1e9420.png
+rabat-terrace https://cdn.ocoya.com/prod/ai/posts/acc47272-18fa-4bee-95b5-432a149e4b95.png
+airport-suitcase https://cdn.ocoya.com/prod/ai/posts/13185f4a-cd9d-42ae-96ba-8478c321b591.png
+cafe-phone https://cdn.ocoya.com/prod/ai/posts/e145aa68-93a3-41ff-b735-1001f86707a0.png
+friends-hug https://cdn.ocoya.com/prod/ai/posts/def9ebf2-0e2a-4989-9e00-b9d569e3d860.png
+door-delivery https://cdn.ocoya.com/prod/ai/posts/50b02383-6afd-41ad-830b-461076d9800a.png
