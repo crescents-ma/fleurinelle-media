@@ -1,0 +1,19 @@
+name: Fetch site photos
+on:
+  workflow_dispatch:
+  push:
+    paths: ["tools/fetch_site_photos.py", ".github/workflows/fetch-site-photos.yml"]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/fetch_site_photos.py
+      - run: |
+          git config user.name "fleurinelle-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add site-photos
+          git commit -m "Sync product photos from fleurinelle.com" || echo "nothing new"
+          git push
