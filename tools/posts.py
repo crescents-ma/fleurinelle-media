@@ -129,7 +129,7 @@ Have someone to surprise? Comment CITY and we'll help you choose.""",
 # 9
 dict(kind="Promo", lang="EN", title="Five reasons to send with Fleurinelle",
  slides=[
-  dict(photo="beauty", head="Sending flowers home, without the stress", line="Five things we do differently.", arch_h=500),
+  dict(photo="beauty", head="Sending flowers home, without the stress", line="Four things we do differently.", arch_h=500),
   dict(eyebrow="1", head="The full price, upfront.", line="In €, delivery included, before you pay."),
   dict(eyebrow="2", head="No account needed.", line="Order in a few minutes, no password to forget."),
   dict(eyebrow="3", head="Your card, her language.", line="Arabic, French, English or Spanish."),
